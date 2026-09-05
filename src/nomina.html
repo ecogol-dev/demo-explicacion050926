@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Nómina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>MiNómina</h2>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Inicio</a></li>
+                    <li><a href="#">Comprobantes</a></li>
+                    <li><a href="#">Deducciones</a></li>
+                    <li><a href="#">Configuración</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Resumen de Nómina</h1>
+                <div class="user-profile">
+                    <span>Periodo: Quincena 1 - Octubre</span>
+                </div>
+            </header>
+
+            <section class="summary-cards">
+                <div class="card highlight">
+                    <h3>Neto a Recibir</h3>
+                    <p class="amount">$2,450,000</p>
+                </div>
+                <div class="card">
+                    <h3>Total Devengado</h3>
+                    <p class="amount positive">$2,850,000</p>
+                </div>
+                <div class="card">
+                    <h3>Total Deducciones</h3>
+                    <p class="amount negative">-$400,000</p>
+                </div>
+            </section>
+
+            <section class="payroll-details">
+                <h2>Detalle del Recibo</h2>
+                <table class="payroll-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Tipo</th>
+                            <th>Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sueldo Básico</td>
+                            <td><span class="tag incoming">Devengado</span></td>
+                            <td>$2,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>Auxilio de Transporte</td>
+                            <td><span class="tag incoming">Devengado</span></td>
+                            <td>$350,000</td>
+                        </tr>
+                        <tr>
+                            <td>Aporte a Salud (4%)</td>
+                            <td><span class="tag outgoing">Deducción</span></td>
+                            <td>-$200,000</td>
+                        </tr>
+                        <tr>
+                            <td>Aporte a Pensión (4%)</td>
+                            <td><span class="tag outgoing">Deducción</span></td>
+                            <td>-$200,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
